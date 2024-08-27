@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="darkmode ">
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round">on      off </span>
+              </label>
+              <label for="" id="text-darkmode">Dark Mode</label>
+    </div>
+       <div class="suche">
+        <i class="fa-solid fa-magnifying-glass"></i>
+       <input type="search" name="search" id="search" placeholder="suche...">
+     
+    </div>
+    </header>
+    <main>
+        <div class="main">
+        <h1>To-Do Liste</h1>
+        <form action="">
+        <input type="text" name="task" id="task" required placeholder="neue Aufgabe">
+        <button>hinzufügen</button>
+    </form>
+    <ul class="to-do-liste">
+        <!-- <li>new task <i class="fa-solid fa-check"> </i><i class="fa-solid fa-trash"></i>  </li> -->
+    </ul>
+</div>
+
+    <button id="loschen">Alles löschen</button>
+    </main>
+</body>
+</html>

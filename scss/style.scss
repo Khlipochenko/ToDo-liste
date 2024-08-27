@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: #041042;
+}
+body{
+    background-color: #5D77E3;
+    
+}
+button{
+    padding: 0.9rem;
+    border: none;
+    background-color: #4ba9e7;
+    border-radius: 10px;
+    color: rgb(247, 248, 246);
+    box-shadow: -3px -1px 10px -1px rgba(0,0,0,0.46);
+    &:hover{
+        background-color: #0b5679;
+        color: aliceblue;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+.suche{
+background-color: white;
+border-radius: 5px;
+i{
+    margin-left: .3rem;
+padding: .3rem;
+    border-right: 2px solid rgb(190, 185, 185);
+    
+}
+input {
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+}
+.darkmode{
+    display: flex;
+    align-items: center;
+   #text-darkmode{
+  
+   
+    padding-left: 1rem;
+   }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+    text-align: center;
+    padding-top: .4rem;
+    font-size: .9rem;
+    color: #1f2122;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+}
+}
+
+main{
+   
+    position: relative;
+    height: 100vh;
+    .main{
+        background-color: aliceblue;
+        width: 70%;
+        height: 70%;
+        border-radius: 25px;
+        margin: 3rem auto;
+        
+   
+   
+   
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+  } 
+  form{
+    display: flex;
+    justify-content: center;
+    input{
+       
+        margin-right: 2rem;
+        width: 50%;
+        height: 3rem;
+        border-radius: 5px;
+        padding: 1rem;
+        border: 2px solid #B1AFFF ;
+    }
+
+}
+    ul{
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        li{
+            list-style: none;
+            margin: 1rem;
+            border: 2px solid #B1AFFF ;
+            padding: 0.5rem;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            position: relative; }
+
+            .fa-check{
+                position: absolute;
+                right:3rem;
+                top: 0.5rem;
+                &:hover{
+                    color: #B1AFFF;
+            }}
+            .fa-trash{
+                position: absolute;
+                right: 1rem;
+                top: 0.5rem;
+               &:hover{
+                color: #B1AFFF;
+               }
+            
+            }
+              
+    .hl{
+        background-color: yellow;
+        font-size: 1.5rem;
+    }
+      
+              
+       
+
+    }
+}
+    #loschen{
+  
+        position: absolute;
+        bottom: 10rem;
+        right :5rem
+    }
+  
+}
+.dark{
+    background-color: #54595c;
+    button{
+        background-color: #6d7980;
+    }
+    label{
+    color: white;}
+    .main{
+        background-color: #292b33;
+        color: aliceblue;
+        h1{
+            color: aliceblue;
+        }
+        input{
+            background-color: #adbac0;
+            border: 2px solid rgb(77, 73, 90);
+            &::placeholder{
+                color: rgb(252, 254, 255);
+            }
+        }
+      
+        li{
+            background-color: grey;
+            color: white;
+            border: 2px solid rgb(27, 1, 121);
+            i{
+                color: white;
+            }
+        }
+    }
+}

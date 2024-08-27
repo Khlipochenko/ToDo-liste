@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  color: #041042;
+}
+
+body {
+  background-color: #5D77E3;
+}
+
+button {
+  padding: 0.9rem;
+  border: none;
+  background-color: #4ba9e7;
+  border-radius: 10px;
+  color: rgb(247, 248, 246);
+  box-shadow: -3px -1px 10px -1px rgba(0, 0, 0, 0.46);
+}
+button:hover {
+  background-color: #0b5679;
+  color: aliceblue;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+header .suche {
+  background-color: white;
+  border-radius: 5px;
+}
+header .suche i {
+  margin-left: 0.3rem;
+  padding: 0.3rem;
+  border-right: 2px solid rgb(190, 185, 185);
+}
+header .suche input {
+  outline: none;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+header .darkmode {
+  display: flex;
+  align-items: center;
+}
+header .darkmode #text-darkmode {
+  padding-left: 1rem;
+}
+header .darkmode .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+header .darkmode .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header .darkmode .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+header .darkmode .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+header .darkmode input:checked + .slider {
+  background-color: #2196F3;
+}
+header .darkmode input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+header .darkmode input:checked + .slider:before {
+  transform: translateX(26px);
+}
+header .darkmode .slider.round {
+  border-radius: 34px;
+  text-align: center;
+  padding-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #1f2122;
+}
+header .darkmode .slider.round:before {
+  border-radius: 50%;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+main .main {
+  background-color: aliceblue;
+  width: 70%;
+  height: 70%;
+  border-radius: 25px;
+  margin: 3rem auto;
+}
+main .main h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+main .main form {
+  display: flex;
+  justify-content: center;
+}
+main .main form input {
+  margin-right: 2rem;
+  width: 50%;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 1rem;
+  border: 2px solid #B1AFFF;
+}
+main .main ul {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+main .main ul li {
+  list-style: none;
+  margin: 1rem;
+  border: 2px solid #B1AFFF;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+}
+main .main ul .fa-check {
+  position: absolute;
+  right: 3rem;
+  top: 0.5rem;
+}
+main .main ul .fa-check:hover {
+  color: #B1AFFF;
+}
+main .main ul .fa-trash {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+main .main ul .fa-trash:hover {
+  color: #B1AFFF;
+}
+main .main ul .hl {
+  background-color: yellow;
+  font-size: 1.5rem;
+}
+main #loschen {
+  position: absolute;
+  bottom: 10rem;
+  right: 5rem;
+}
+
+.dark {
+  background-color: #54595c;
+}
+.dark button {
+  background-color: #6d7980;
+}
+.dark label {
+  color: white;
+}
+.dark .main {
+  background-color: #292b33;
+  color: aliceblue;
+}
+.dark .main h1 {
+  color: aliceblue;
+}
+.dark .main input {
+  background-color: #adbac0;
+  border: 2px solid rgb(77, 73, 90);
+}
+.dark .main input::placeholder {
+  color: rgb(252, 254, 255);
+}
+.dark .main li {
+  background-color: grey;
+  color: white;
+  border: 2px solid rgb(27, 1, 121);
+}
+.dark .main li i {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
